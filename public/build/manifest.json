@@ -1,0 +1,369 @@
+{
+  "resources/fonts/BebasNeue-Thin.eot": {
+    "file": "assets/BebasNeue-Thin-fc3f5418.eot",
+    "src": "resources/fonts/BebasNeue-Thin.eot"
+  },
+  "resources/fonts/BebasNeue-Thin.ttf": {
+    "file": "assets/BebasNeue-Thin-874c5357.ttf",
+    "src": "resources/fonts/BebasNeue-Thin.ttf"
+  },
+  "resources/fonts/BebasNeue-Thin.woff": {
+    "file": "assets/BebasNeue-Thin-39b04a28.woff",
+    "src": "resources/fonts/BebasNeue-Thin.woff"
+  },
+  "resources/fonts/BebasNeueBold.eot": {
+    "file": "assets/BebasNeueBold-d89bceee.eot",
+    "src": "resources/fonts/BebasNeueBold.eot"
+  },
+  "resources/fonts/BebasNeueBold.ttf": {
+    "file": "assets/BebasNeueBold-1ae482b9.ttf",
+    "src": "resources/fonts/BebasNeueBold.ttf"
+  },
+  "resources/fonts/BebasNeueBold.woff": {
+    "file": "assets/BebasNeueBold-c68da50c.woff",
+    "src": "resources/fonts/BebasNeueBold.woff"
+  },
+  "resources/fonts/BebasNeueBook.eot": {
+    "file": "assets/BebasNeueBook-a4ed3895.eot",
+    "src": "resources/fonts/BebasNeueBook.eot"
+  },
+  "resources/fonts/BebasNeueBook.ttf": {
+    "file": "assets/BebasNeueBook-c1a92721.ttf",
+    "src": "resources/fonts/BebasNeueBook.ttf"
+  },
+  "resources/fonts/BebasNeueBook.woff": {
+    "file": "assets/BebasNeueBook-ccb9d849.woff",
+    "src": "resources/fonts/BebasNeueBook.woff"
+  },
+  "resources/fonts/BebasNeueLight.eot": {
+    "file": "assets/BebasNeueLight-715662d4.eot",
+    "src": "resources/fonts/BebasNeueLight.eot"
+  },
+  "resources/fonts/BebasNeueLight.ttf": {
+    "file": "assets/BebasNeueLight-6c90615c.ttf",
+    "src": "resources/fonts/BebasNeueLight.ttf"
+  },
+  "resources/fonts/BebasNeueLight.woff": {
+    "file": "assets/BebasNeueLight-553c09dc.woff",
+    "src": "resources/fonts/BebasNeueLight.woff"
+  },
+  "resources/fonts/BebasNeueRegular.eot": {
+    "file": "assets/BebasNeueRegular-34ab6d8a.eot",
+    "src": "resources/fonts/BebasNeueRegular.eot"
+  },
+  "resources/fonts/BebasNeueRegular.ttf": {
+    "file": "assets/BebasNeueRegular-ef5096de.ttf",
+    "src": "resources/fonts/BebasNeueRegular.ttf"
+  },
+  "resources/fonts/BebasNeueRegular.woff": {
+    "file": "assets/BebasNeueRegular-13680bfc.woff",
+    "src": "resources/fonts/BebasNeueRegular.woff"
+  },
+  "resources/images/bg_first.jpg": {
+    "file": "assets/bg_first-7307d2c2.jpg",
+    "src": "resources/images/dest/backgrounds/bg_first.jpg"
+  },
+  "resources/images/bg_footer.jpg": {
+    "file": "assets/bg_footer-a586b824.jpg",
+    "src": "resources/images/dest/backgrounds/bg_footer.jpg"
+  },
+  "resources/images/dest/assets/catalog_asset1.jpg": {
+    "file": "assets/catalog_asset1-bffab110.jpg",
+    "src": "resources/images/dest/assets/catalog_asset1.jpg"
+  },
+  "resources/images/dest/assets/catalog_asset2.jpg": {
+    "file": "assets/catalog_asset2-8bcc0abe.jpg",
+    "src": "resources/images/dest/assets/catalog_asset2.jpg"
+  },
+  "resources/images/dest/assets/catalog_big_asset1.jpg": {
+    "file": "assets/catalog_big_asset1-fc630d3e.jpg",
+    "src": "resources/images/dest/assets/catalog_big_asset1.jpg"
+  },
+  "resources/images/dest/assets/catalog_big_asset2.jpg": {
+    "file": "assets/catalog_big_asset2-db490763.jpg",
+    "src": "resources/images/dest/assets/catalog_big_asset2.jpg"
+  },
+  "resources/images/dest/assets/company_logo.png": {
+    "file": "assets/company_logo-34d11102.png",
+    "src": "resources/images/src/assets/company_logo.png"
+  },
+  "resources/images/dest/assets/lines2_asset.png": {
+    "file": "assets/lines2_asset-74098f60.png",
+    "src": "resources/images/src/assets/lines2_asset.png"
+  },
+  "resources/images/dest/assets/lines_asset.png": {
+    "file": "assets/lines_asset-5651a729.png",
+    "src": "resources/images/dest/assets/lines_asset.png"
+  },
+  "resources/images/dest/assets/sliderimg_asset.jpg": {
+    "file": "assets/sliderimg_asset-50be1d0b.jpg",
+    "src": "resources/images/dest/assets/sliderimg_asset.jpg"
+  },
+  "resources/images/dest/assets/tractor_asset.png": {
+    "file": "assets/tractor_asset-51f71f3a.png",
+    "src": "resources/images/src/assets/tractor_asset.png"
+  },
+  "resources/images/dest/assets/tractor_place_asset.png": {
+    "file": "assets/tractor_place_asset-8c75e189.png",
+    "src": "resources/images/src/assets/tractor_place_asset.png"
+  },
+  "resources/images/dest/assets/waves_asset.png": {
+    "file": "assets/waves_asset-c24d58d9.png",
+    "src": "resources/images/src/assets/waves_asset.png"
+  },
+  "resources/images/dest/backgrounds/bg_first.jpg": {
+    "file": "assets/bg_first-7307d2c2.jpg",
+    "src": "resources/images/dest/backgrounds/bg_first.jpg"
+  },
+  "resources/images/dest/backgrounds/bg_footer.jpg": {
+    "file": "assets/bg_footer-a586b824.jpg",
+    "src": "resources/images/dest/backgrounds/bg_footer.jpg"
+  },
+  "resources/images/dest/backgrounds/bg_second.jpg": {
+    "file": "assets/bg_second-bd3f1205.jpg",
+    "src": "resources/images/dest/backgrounds/bg_second.jpg"
+  },
+  "resources/images/dest/catalog/1.png": {
+    "file": "assets/1-188a382e.png",
+    "src": "resources/images/src/catalog/1.png"
+  },
+  "resources/images/dest/catalog/2.png": {
+    "file": "assets/2-f8c979fc.png",
+    "src": "resources/images/src/catalog/2.png"
+  },
+  "resources/images/dest/catalog/3.png": {
+    "file": "assets/3-6ecffed0.png",
+    "src": "resources/images/src/catalog/3.png"
+  },
+  "resources/images/dest/catalog/4.png": {
+    "file": "assets/4-1bc359b3.png",
+    "src": "resources/images/src/catalog/4.png"
+  },
+  "resources/images/dest/catalog/5.png": {
+    "file": "assets/5-a4c8d08f.png",
+    "src": "resources/images/src/catalog/5.png"
+  },
+  "resources/images/dest/catalog/6.png": {
+    "file": "assets/6-44b43193.png",
+    "src": "resources/images/src/catalog/6.png"
+  },
+  "resources/images/dest/catalog/7.png": {
+    "file": "assets/7-8c4cfaa9.png",
+    "src": "resources/images/src/catalog/7.png"
+  },
+  "resources/images/dest/catalog/8.png": {
+    "file": "assets/8-df39667e.png",
+    "src": "resources/images/src/catalog/8.png"
+  },
+  "resources/images/dest/logo.png": {
+    "file": "assets/logo-ab9493f9.png",
+    "src": "resources/images/src/logo.png"
+  },
+  "resources/images/dest/logo_short.png": {
+    "file": "assets/logo_short-034d4fb6.png",
+    "src": "resources/images/src/logo_short.png"
+  },
+  "resources/images/favicon.ico": {
+    "file": "assets/favicon-94cd1ee5.ico",
+    "src": "resources/images/favicon.ico"
+  },
+  "resources/images/icons/arrow_another_ico.svg": {
+    "file": "assets/arrow_another_ico-4cfe5d4e.svg",
+    "src": "resources/images/icons/arrow_another_ico.svg"
+  },
+  "resources/images/icons/arrow_menu.svg": {
+    "file": "assets/arrow_menu-7b3a894f.svg",
+    "src": "resources/images/icons/arrow_menu.svg"
+  },
+  "resources/images/icons/arrow_slider.svg": {
+    "file": "assets/arrow_slider-0beb5a94.svg",
+    "src": "resources/images/icons/arrow_slider.svg"
+  },
+  "resources/images/icons/checkbox_ok.png": {
+    "file": "assets/checkbox_ok-876f9905.png",
+    "src": "resources/images/icons/checkbox_ok.png"
+  },
+  "resources/images/icons/checkbox_ok_another.png": {
+    "file": "assets/checkbox_ok_another-cc4b5489.png",
+    "src": "resources/images/icons/checkbox_ok_another.png"
+  },
+  "resources/images/icons/close_modal_ico.svg": {
+    "file": "assets/close_modal_ico-8fb2bdb0.svg",
+    "src": "resources/images/icons/close_modal_ico.svg"
+  },
+  "resources/images/icons/eye_ico.svg": {
+    "file": "assets/eye_ico-6e0b39e1.svg",
+    "src": "resources/images/icons/eye_ico.svg"
+  },
+  "resources/images/icons/mail_ico.svg": {
+    "file": "assets/mail_ico-a3810e94.svg",
+    "src": "resources/images/icons/mail_ico.svg"
+  },
+  "resources/images/icons/phone_catalog_ico.svg": {
+    "file": "assets/phone_catalog_ico-964739d1.svg",
+    "src": "resources/images/icons/phone_catalog_ico.svg"
+  },
+  "resources/images/icons/phone_footer_ico.svg": {
+    "file": "assets/phone_footer_ico-a3c48b84.svg",
+    "src": "resources/images/icons/phone_footer_ico.svg"
+  },
+  "resources/images/icons/phone_ico.svg": {
+    "file": "assets/phone_ico-834bf5a1.svg",
+    "src": "resources/images/icons/phone_ico.svg"
+  },
+  "resources/images/icons/plus_ico.svg": {
+    "file": "assets/plus_ico-30a871b9.svg",
+    "src": "resources/images/icons/plus_ico.svg"
+  },
+  "resources/images/icons/radio_ok.png": {
+    "file": "assets/radio_ok-92ff4269.png",
+    "src": "resources/images/icons/radio_ok.png"
+  },
+  "resources/images/icons/radio_ok_another.png": {
+    "file": "assets/radio_ok_another-cc272578.png",
+    "src": "resources/images/icons/radio_ok_another.png"
+  },
+  "resources/images/icons/telegram.png": {
+    "file": "assets/telegram-61a47304.png",
+    "src": "resources/images/icons/telegram.png"
+  },
+  "resources/images/icons/viber.png": {
+    "file": "assets/viber-fbc68090.png",
+    "src": "resources/images/icons/viber.png"
+  },
+  "resources/images/icons/whatsapp.png": {
+    "file": "assets/whatsapp-d5d18fb7.png",
+    "src": "resources/images/icons/whatsapp.png"
+  },
+  "resources/images/logo.webp": {
+    "file": "assets/logo-45a248f1.webp",
+    "src": "resources/images/logo.webp"
+  },
+  "resources/images/src/assets/catalog_asset1.jpg": {
+    "file": "assets/catalog_asset1-ca181b9a.jpg",
+    "src": "resources/images/src/assets/catalog_asset1.jpg"
+  },
+  "resources/images/src/assets/catalog_asset2.jpg": {
+    "file": "assets/catalog_asset2-081b5cac.jpg",
+    "src": "resources/images/src/assets/catalog_asset2.jpg"
+  },
+  "resources/images/src/assets/catalog_big_asset1.jpg": {
+    "file": "assets/catalog_big_asset1-ce786db2.jpg",
+    "src": "resources/images/src/assets/catalog_big_asset1.jpg"
+  },
+  "resources/images/src/assets/catalog_big_asset2.jpg": {
+    "file": "assets/catalog_big_asset2-f0a69360.jpg",
+    "src": "resources/images/src/assets/catalog_big_asset2.jpg"
+  },
+  "resources/images/src/assets/company_logo.png": {
+    "file": "assets/company_logo-34d11102.png",
+    "src": "resources/images/src/assets/company_logo.png"
+  },
+  "resources/images/src/assets/lines2_asset.png": {
+    "file": "assets/lines2_asset-74098f60.png",
+    "src": "resources/images/src/assets/lines2_asset.png"
+  },
+  "resources/images/src/assets/lines_asset.png": {
+    "file": "assets/lines_asset-abefd6fa.png",
+    "src": "resources/images/src/assets/lines_asset.png"
+  },
+  "resources/images/src/assets/sliderimg_asset.jpg": {
+    "file": "assets/sliderimg_asset-c91f86b4.jpg",
+    "src": "resources/images/src/assets/sliderimg_asset.jpg"
+  },
+  "resources/images/src/assets/tractor_asset.png": {
+    "file": "assets/tractor_asset-51f71f3a.png",
+    "src": "resources/images/src/assets/tractor_asset.png"
+  },
+  "resources/images/src/assets/tractor_place_asset.png": {
+    "file": "assets/tractor_place_asset-8c75e189.png",
+    "src": "resources/images/src/assets/tractor_place_asset.png"
+  },
+  "resources/images/src/assets/waves_asset.png": {
+    "file": "assets/waves_asset-c24d58d9.png",
+    "src": "resources/images/src/assets/waves_asset.png"
+  },
+  "resources/images/src/backgrounds/bg_first.jpg": {
+    "file": "assets/bg_first-5217d1ea.jpg",
+    "src": "resources/images/src/backgrounds/bg_first.jpg"
+  },
+  "resources/images/src/backgrounds/bg_footer.jpg": {
+    "file": "assets/bg_footer-fc22ebe2.jpg",
+    "src": "resources/images/src/backgrounds/bg_footer.jpg"
+  },
+  "resources/images/src/backgrounds/bg_second.jpg": {
+    "file": "assets/bg_second-47176956.jpg",
+    "src": "resources/images/src/backgrounds/bg_second.jpg"
+  },
+  "resources/images/src/catalog/1.png": {
+    "file": "assets/1-188a382e.png",
+    "src": "resources/images/src/catalog/1.png"
+  },
+  "resources/images/src/catalog/2.png": {
+    "file": "assets/2-f8c979fc.png",
+    "src": "resources/images/src/catalog/2.png"
+  },
+  "resources/images/src/catalog/3.png": {
+    "file": "assets/3-6ecffed0.png",
+    "src": "resources/images/src/catalog/3.png"
+  },
+  "resources/images/src/catalog/4.png": {
+    "file": "assets/4-1bc359b3.png",
+    "src": "resources/images/src/catalog/4.png"
+  },
+  "resources/images/src/catalog/5.png": {
+    "file": "assets/5-a4c8d08f.png",
+    "src": "resources/images/src/catalog/5.png"
+  },
+  "resources/images/src/catalog/6.png": {
+    "file": "assets/6-44b43193.png",
+    "src": "resources/images/src/catalog/6.png"
+  },
+  "resources/images/src/catalog/7.png": {
+    "file": "assets/7-8c4cfaa9.png",
+    "src": "resources/images/src/catalog/7.png"
+  },
+  "resources/images/src/catalog/8.png": {
+    "file": "assets/8-df39667e.png",
+    "src": "resources/images/src/catalog/8.png"
+  },
+  "resources/images/src/logo.png": {
+    "file": "assets/logo-ab9493f9.png",
+    "src": "resources/images/src/logo.png"
+  },
+  "resources/images/src/logo_short.png": {
+    "file": "assets/logo_short-034d4fb6.png",
+    "src": "resources/images/src/logo_short.png"
+  },
+  "resources/images/tractor_asset.webp": {
+    "file": "assets/tractor_asset-97706de6.webp",
+    "src": "resources/images/tractor_asset.webp"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-108be920.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/whatsapp-d5d18fb7.png",
+      "assets/viber-fbc68090.png",
+      "assets/telegram-61a47304.png"
+    ],
+    "css": [
+      "assets/app-108be920.css"
+    ],
+    "file": "assets/app-74e21168.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/scss/libs.scss": {
+    "file": "assets/libs-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/scss/libs.scss"
+  },
+  "resources/scss/main.scss": {
+    "file": "assets/main-b7f33028.css",
+    "isEntry": true,
+    "src": "resources/scss/main.scss"
+  }
+}
