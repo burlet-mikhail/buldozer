@@ -2,6 +2,7 @@
 
 @task('deploy')
 cd /home/a/a022bdzr/__wildcard__.buldozer.pro
+git config --global --add safe.directory /home/a/a022bdzr/__wildcard__.buldozer.pro
 git stash
 git pull
 /usr/local/php/cgi/8.4/bin/php artisan queue:restart
