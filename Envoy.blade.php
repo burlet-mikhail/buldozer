@@ -1,4 +1,4 @@
-@servers(['beget' => ['a022bdzr@5.101.152.59']])
+@servers(['beget' => ['a022bdzr@a022bdzr.beget.tech']])
 
 @task('deploy')
 cd /home/a/a022bdzr/__wildcard__.buldozer.pro
