@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="minimum-scale=1.0, target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+
+
+    <title>Title-Seller</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <!--main_css-->
+    <link rel="stylesheet" href="css/lib/animation_big.css">
+    <link rel="stylesheet" href="css/lib/nice-select.css">
+    <link rel="stylesheet" href="css/lib/nouislider.css">
+    <link rel="stylesheet" href="css/lib/jquery.scrollbar.css">
+    <link rel="stylesheet" href="css/lib/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <!--main_css_end-->
+
+
+</head>
+
+<body class="main__page">
+
+
+<!--svg_start-->
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden; display: none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 9" id="arrow_another_ico">
+        <path d="M8.62 8.76l7.12-6.82a.833.833 0 000-1.19l-.53-.5a.888.888 0 00-1.23 0L8 5.98 2.02.24a.908.908 0 00-1.23 0l-.53.5a.833.833 0 000 1.19l7.12 6.83A.894.894 0 008 9a.86.86 0 00.62-.24z" fill-rule="evenodd"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.125 6.313" id="arrow_menu">
+        <path d="M5.997 6.128l4.962-4.76a.57.57 0 000-.827L10.594.19a.63.63 0 00-.863 0l-4.167 4-4.171-4a.63.63 0 00-.863 0L.165.54a.57.57 0 000 .828l4.966 4.765a.635.635 0 00.866-.005z" fill-rule="evenodd"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.62 11.688" id="arrow_slider">
+        <path d="M6.43 5.387L1.43.18A.588.588 0 001-.007.61.61 0 00.56.18L.2.564a.659.659 0 000 .9l4.19 4.373-4.2 4.377a.66.66 0 000 .906l.37.383a.6.6 0 00.87 0l5-5.212a.664.664 0 000-.904z" fill-rule="evenodd"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="close_modal_ico">
+        <path d="M15.625.777L14.918.07.068 14.92l.708.707L15.626.777z"></path>
+        <path d="M14.918 15.627l.707-.707L.775.07.07.779l14.849 14.849z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.44 12.812" id="eye_ico">
+        <path d="M10.71.013C6.61.013 2.89 2.255.15 5.897a.861.861 0 000 1.014c2.74 3.646 6.46 5.888 10.56 5.888s7.81-2.242 10.55-5.884a.861.861 0 000-1.014C18.52 2.255 14.8.013 10.71.013zM11 10.906a4.512 4.512 0 114.2-4.208 4.505 4.505 0 01-4.2 4.208zm-.14-2.08a2.429 2.429 0 112.27-2.269 2.432 2.432 0 01-2.27 2.271z" fill-rule="evenodd"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 15" id="mail_ico">
+        <path d="M14.58 7.612l7.4 4.652v-9.5zM.02 2.763v9.5l7.4-4.652zM20.61 0H1.39A1.345 1.345 0 00.06 1.161L11 8.324l10.94-7.163A1.345 1.345 0 0020.61 0zm-7.29 8.439L11.38 9.71a.7.7 0 01-.76 0L8.68 8.437.06 13.855a1.349 1.349 0 001.33 1.151h19.22a1.349 1.349 0 001.33-1.151z" fill-rule="evenodd"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" id="phone_catalog_ico">
+        <path d="M7.854 11.13a7.659 7.659 0 01-2.315-4.36.638.638 0 01.187-.54l1.468-1.47a.655.655 0 00.092-.81L4.949.31A.664.664 0 004.1.07L.349 1.84a.656.656 0 00-.36.66 19.594 19.594 0 0016.49 16.51.654.654 0 00.651-.36l1.767-3.76a.66.66 0 00-.238-.85l-3.628-2.34a.654.654 0 00-.811.1l-1.467 1.47a.645.645 0 01-.545.18 7.628 7.628 0 01-4.354-2.32zm7.2-.97a.66.66 0 01-.655-.66 4.919 4.919 0 00-4.914-4.92.661.661 0 01-.656-.66.653.653 0 01.656-.65 6.231 6.231 0 016.224 6.23.661.661 0 01-.653.66zm3.275 0a.661.661 0 01-.655-.66 8.2 8.2 0 00-8.189-8.2.661.661 0 01-.656-.66.653.653 0 01.656-.65 9.512 9.512 0 019.5 9.51.649.649 0 01-.192.46.636.636 0 01-.462.2z" fill-rule="evenodd"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 18" id="phone_footer_ico">
+        <path d="M9.584-.01H1.417A1.366 1.366 0 000 1.3v15.4a1.366 1.366 0 001.413 1.31H9.58A1.367 1.367 0 0011 16.7V1.3A1.367 1.367 0 009.584-.01zm-6.1.8h4.032a.274.274 0 01.184.31.28.28 0 01-.184.32H3.484A.279.279 0 013.3 1.1a.273.273 0 01.185-.31zM5.5 16.71a.837.837 0 11.9-.84.869.869 0 01-.9.84zm4.436-2.87H1.062V2.21h8.874v11.63z" fill-rule="evenodd"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 18" id="phone_ico">
+        <path d="M9.58-.008H1.42A1.372 1.372 0 000 1.3v15.4a1.372 1.372 0 001.42 1.311h8.16A1.372 1.372 0 0011 16.7V1.3A1.372 1.372 0 009.58-.008zM5.5 16.712a.839.839 0 11.9-.838.869.869 0 01-.9.838zM10 14H1V2h9v12z" fill-rule="evenodd"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.25 19.25" id="plus_ico">
+        <path d="M9.62 0a9.625 9.625 0 109.62 9.625A9.63 9.63 0 009.62 0zm0 17.759a8.134 8.134 0 118.13-8.134 8.143 8.143 0 01-8.13 8.134zm3.73-8.947h-2.98V5.83a.75.75 0 00-1.5 0v2.982H5.89a.746.746 0 000 1.491h2.98v2.982a.75.75 0 001.5 0v-2.982h2.98a.746.746 0 000-1.491z" fill-rule="evenodd"></path>
+    </symbol>
+</svg>
+<!--svg_end-->
+
+
+<div id="wrapper" class="wrapper bld__wrapper sub_page_bld__wrapper">
+    <header id="header" class="header">
+        <div class="pre__header">
+            <div class="inner">
+                <div class="city__header slideInBottomMy my_animated">Вся спецтехника в <br class="br_city_mobile__header"><span class="city__header-js">Петропавловске-Камчатском</span></div>
+                <a href="tel:88009002030" class="phone__header slideInBottomMy my_animated">
+            <span class="img__phone">
+              <svg class="icon-svg">
+                <use xlink:href="#phone_ico"></use>
+              </svg>
+            </span>
+                    <span class="text__phone">8 800 900 20 30</span>
+                </a>
+            </div>
+        </div>
+        <div class="main__header">
+            <div class="inner">
+                <a href="#" class="logo__header slideInBottomMy my_delay my_animated"><img src="images/dest/logo.png" alt=""></a>
+                <nav class="menu__header">
+                    <ul class="ul__menu slideInBottomMy my_delay my_animated">
+                        <li class="li__menu active"><a class="a__menu" href="#">Автовышки</a></li>
+                        <li class="li__menu"><a class="a__menu" href="#">Грейдеры</a></li>
+                        <li class="li__menu"><a class="a__menu" href="#">Ассинизаторы</a></li>
+                        <li class="li__menu"><a class="a__menu" href="#">Бульдозеры</a></li>
+                        <li class="li__menu with_sub_menu">
+                            <a class="a__menu" href="#">Еще</a>
+                            <ul class="sub_ul__menu">
+                                <li class="container__sub_ul scrollbar-inner">
+                                    <div class="row__sub_ul">
+                                        <div class="title__row"><span>Популярная техника</span></div>
+                                        <div class="container__row">
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="row__sub_ul">
+                                        <div class="title__row"><span>Редкая техника</span></div>
+                                        <div class="container__row">
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория один</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория два</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория три</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория четыре</a></div>
+                                            <div class="sub_li__menu"><a class="sub_a__menu" href="#">Категория пять</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn_car__header">
+            <span class="img__btn_car slideInBottomMy my_delay my_animated">
+              <svg class="icon-svg">
+                <use xlink:href="#plus_ico"></use>
+              </svg>
+            </span>
+                    <span class="text__btn_car slideInBottomMy my_delay my_animated">Добавить машину</span>
+                </a>
+                <div class="burger__header slideInBottomMy my_delay my_animated">
+                    <input type="checkbox" id="checkbox_menu" class="checkbox_menu visuallyHidden">
+                    <label for="checkbox_menu">
+                <span class="db hamburger">
+                  <span class="bar bar1"></span>
+                  <span class="bar bar2"></span>
+                  <span class="bar bar3"></span>
+                  <span class="bar bar4"></span>
+                </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <div data-wow-delay="0.5s" class="breadcrumbs__site inner breadcrumbs__seller_page wow slideInBottomMy">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li>Спецтех</li>
+            </ul>
+        </div>
+        <section data-wow-delay="0.5s" id="company_block__seller_page" class="company_block__seller_page wow slideInBottomMy">
+            <div class="inner">
+                <div class="wrap__company_block">
+                    <div class="top_block__company">
+                        <div class="left_col__top_block"><img src="images/dest/assets/company_logo.png" alt=""></div>
+                        <div class="right_col__top_block">
+                            <h1 class="h2_title__site h2_black__site">Спецтех</h1>
+                            <div class="sub_title__right_col">Компания</div>
+                            <a href="tel:88009002030" class="phone__right_col">
+                            <span class="img__phone">
+                              <svg class="icon-svg">
+                                <use xlink:href="#phone_ico"></use>
+                              </svg>
+                            </span>
+                                <span class="text__phone">8 800 900 20 30</span>
+                            </a>
+                            <div class="info__right_col content_box_site">
+                                <p>
+                                    Сайт: specteh.ru<br>
+                                    Почта: specteh.@mail.ru<br>
+                                    <a href="#">Россия, Курская область, Курск, улица 50 лет Октября, 185</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories__company content_box_site">
+                        <p>Техника: бульдозеры, автовышки, тракторы</p>
+                    </div>
+                    <div class="content__company content_box_site">
+                        <p>Спецтехника — самоходная землеройная машина, представляющая собой гусеничный или колёсный трактор, тягач и тому подобное с навесным рабочим органом — криволинейным в сечении отвалом (щитом), расположенным вне базы ходовой части машины</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lately_block__main_page" data-wow-delay="0.5s" class="lately_block__main_page lately_block__object_page lately_block__seller_page wow slideInBottomMy">
+            <div class="inner">
+                <div class="catalog__lately">
+                    <div class="cart__site">
+                        <a href="#" class="img__cart"><img src="images/dest/assets/catalog_asset1.jpg" alt=""></a>
+                        <div class="wrap__cart">
+                            <h4 class="title__cart"><a href="#">МАЗ-Телескоп</a></h4>
+                            <div class="list__cart">
+                                <div class="position__list">
+                                    <span>Мощность двигателя</span>
+                                    <span>94 л/с</span>
+                                </div>
+                                <div class="position__list">
+                                    <span>Грузоподъемность стрелы</span>
+                                    <span>14 т</span>
+                                </div>
+                                <div class="position__list">
+                                    <span>Грузозахват</span>
+                                    <span>Крюк</span>
+                                </div>
+                            </div>
+                            <div class="prices__cart">
+                                <div class="position__prices">
+                                    <span>Цена за час:</span>
+                                    <span>2500 ₽</span>
+                                </div>
+                                <div class="position__prices">
+                                    <span>Цена за смену:</span>
+                                    <span>7000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="phone__cart">
+                                <div class="front__phone">
+                                    <div class="wrap__front">
+                      <span class="img__front">
+                        <svg class="icon-svg">
+                          <use xlink:href="#phone_catalog_ico"></use>
+                        </svg>
+                      </span>
+                                        <span class="text__front">Показать телефон</span>
+                                    </div>
+                                </div>
+                                <div class="back__phone">
+                                    <a href="tel:88009002030" class="number__back">8 800 900 20 30</a>
+                                    <div class="socials__back">
+                                        <a href="#" class="item__socials"><img src="images/icons/whatsapp.png" alt=""></a>
+                                        <a href="#" class="item__socials"><img src="images/icons/viber.png" alt=""></a>
+                                        <a href="#" class="item__socials"><img src="images/icons/telegram.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__site">
+                        <a href="#" class="img__cart"><img src="images/dest/assets/catalog_asset1.jpg" alt=""></a>
+                        <div class="wrap__cart">
+                            <h4 class="title__cart"><a href="#">МАЗ-Телескоп</a></h4>
+                            <div class="list__cart">
+                                <div class="position__list">
+                                    <span>Мощность двигателя</span>
+                                    <span>94 л/с</span>
+                                </div>
+                                <div class="position__list">
+                                    <span>Грузоподъемность стрелы</span>
+                                    <span>14 т</span>
+                                </div>
+                                <div class="position__list">
+                                    <span>Грузозахват</span>
+                                    <span>Крюк</span>
+                                </div>
+                            </div>
+                            <div class="prices__cart">
+                                <div class="position__prices">
+                                    <span>Цена за час:</span>
+                                    <span>2500 ₽</span>
+                                </div>
+                                <div class="position__prices">
+                                    <span>Цена за смену:</span>
+                                    <span>7000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="phone__cart">
+                                <div class="front__phone">
+                                    <div class="wrap__front">
+                      <span class="img__front">
+                        <svg class="icon-svg">
+                          <use xlink:href="#phone_catalog_ico"></use>
+                        </svg>
+                      </span>
+                                        <span class="text__front">Показать телефон</span>
+                                    </div>
+                                </div>
+                                <div class="back__phone">
+                                    <a href="tel:88009002030" class="number__back">8 800 900 20 30</a>
+                                    <div class="socials__back">
+                                        <a href="#" class="item__socials"><img src="images/icons/whatsapp.png" alt=""></a>
+                                        <a href="#" class="item__socials"><img src="images/icons/viber.png" alt=""></a>
+                                        <a href="#" class="item__socials"><img src="images/icons/telegram.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__site">
+                        <a href="#" class="img__cart"><img src="images/dest/assets/catalog_asset1.jpg" alt=""></a>
+                        <div class="wrap__cart">
+                            <h4 class="title__cart"><a href="#">МАЗ-Телескоп</a></h4>
+                            <div class="list__cart">
+                                <div class="position__list">
+                                    <span>Мощность двигателя</span>
+                                    <span>94 л/с</span>
+                                </div>
+                                <div class="position__list">
+                                    <span>Грузоподъемность стрелы</span>
+                                    <span>14 т</span>
+                                </div>
+                                <div class="position__list">
+                                    <span>Грузозахват</span>
+                                    <span>Крюк</span>
+                                </div>
+                            </div>
+                            <div class="prices__cart">
+                                <div class="position__prices">
+                                    <span>Цена за час:</span>
+                                    <span>2500 ₽</span>
+                                </div>
+                                <div class="position__prices">
+                                    <span>Цена за смену:</span>
+                                    <span>7000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="phone__cart">
+                                <div class="front__phone">
+                                    <div class="wrap__front">
+                      <span class="img__front">
+                        <svg class="icon-svg">
+                          <use xlink:href="#phone_catalog_ico"></use>
+                        </svg>
+                      </span>
+                                        <span class="text__front">Показать телефон</span>
+                                    </div>
+                                </div>
+                                <div class="back__phone">
+                                    <a href="tel:88009002030" class="number__back">8 800 900 20 30</a>
+                                    <div class="socials__back">
+                                        <a href="#" class="item__socials"><img src="images/icons/whatsapp.png" alt=""></a>
+                                        <a href="#" class="item__socials"><img src="images/icons/viber.png" alt=""></a>
+                                        <a href="#" class="item__socials"><img src="images/icons/telegram.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer footer_without_top">
+        <div class="bot__footer">
+            <div class="inner">
+                <div class="copy__bot">Бульдозер 2021</div>
+                <div class="phone__bot">
+                    <div class="img__phone">
+                        <svg class="icon-svg">
+                            <use xlink:href="#phone_footer_ico"></use>
+                        </svg>
+                    </div>
+                    <div class="text__phone">У вас возникли вопросы? <br class="on_mobile_br__text">Звоните по номеру <a href="tel:88002003070">8 800 200 30 70</a></div>
+                </div>
+                <div class="add_car__bot"><a href="#">Добавить машину</a></div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!-- modals_callback -->
+<div class="g-hidden">
+    <div class="b-modal" id="modal_callback">
+        <div class="b-modal_close arcticmodal-close"></div>
+        <div class="box_content_modal__page_block modal_callback_class">
+            <h2 class="h2_title__site h2_black__site">Оставить заявку</h2>
+            <div class="text__modal">Заполните форму и мы перезвоним вам <br>для уточнения деталей</div>
+            <div class="form_box_faq_page_modal">
+                <div class="inner">
+                    <form action="" id="modal_form_callback" name="modal_form_callback">
+                        <div class="top_box_form">
+                            <label for="name_modal_callback"><input class="inputbox" id="name_modal_callback" name="name_modal_callback" type="text" placeholder="Ваше имя" required></label>
+                            <label for="phone_modal_callback"><input class="inputbox mask_phone" id="phone_modal_callback" name="phone_modal_callback" type="text" placeholder="Ваш телефон" required></label>
+                        </div>
+                        <div class="bot_box_form">
+                            <button class="button btn__modal" type="submit"><span>Отправить</span></button>
+                            <div class="first_text_item">Нажимая на кнопку Отправить, <br>вы соглашаетесь с <a href="#">условиями обработки данных</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modals_city -->
+<div class="g-hidden">
+    <div class="b-modal" id="modal_city">
+        <div class="b-modal_close arcticmodal-close"></div>
+        <div class="box_content_modal__page_block modal_callback_class modal_city_class">
+            <h2 class="h2_title__site h2_black__site">Выберите город</h2>
+            <div id="tabs__modal" class="tabs__modal">
+                <div class="top__tabs">
+                    <div class="item__top">Москва и МО</div>
+                    <div class="item__top active_tab">Все города</div>
+                </div>
+                <div class="bot__tabs">
+                    <div class="item__bot">
+                        <div class="position__item">
+                            <div class="title__position">A</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">Б</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">В</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">Г</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                                <div class="item__list"><a href="#">Название города</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__bot active_tab">
+                        <div class="position__item">
+                            <div class="title__position">А</div>
+                            <div class="list__position">
+                                <div class="item__list active_item__list"><a href="#">Абакан</a></div>
+                                <div class="item__list"><a href="#">Абакан</a></div>
+                                <div class="item__list"><a href="#">Абакан</a></div>
+                                <div class="item__list"><a href="#">Абакан</a></div>
+                                <div class="item__list"><a href="#">Абакан</a></div>
+                                <div class="item__list"><a href="#">Абакан</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">Б</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">В</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">Б</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">Б</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                                <div class="item__list"><a href="#">Белая Калитва</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">В</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">В</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">В</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                            </div>
+                        </div>
+                        <div class="position__item">
+                            <div class="title__position">В</div>
+                            <div class="list__position">
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                                <div class="item__list"><a href="#">Великий Новгород</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<!-- main_js -->
+<script src="js/lib/jquery.nice-select.js"></script>
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/lib/jquery.scrollbar.js"></script>
+<script src="js/lib/nouislider.js"></script>
+<script src="js/lib/wow.js"></script>
+<script src="js/lib/jquery.arcticmodal.js"></script>
+<script src="js/lib/jquery.maskedinput.min.js"></script>
+<script src="js/main.js"></script>
+<!-- main_js_end -->
+
+
+<!-- range_sliders_js -->
+<script>
+    //range_slider_1
+    if ($("#range_slider_1").length) {
+        //change names of 3 vars + id + values start + values + range + steps
+        var range_slider_1 = document.getElementById('range_slider_1');
+        var range_slider_1_max = document.getElementById('range_slider_1_max');
+        var range_slider_1_min = document.getElementById('range_slider_1_min');
+
+        noUiSlider.create(range_slider_1, {
+            start: [1, 100],
+            connect: true,
+            step: 1,
+            range: {
+                'min': 1,
+                'max': 100
+            },
+            format: {
+                to: function(value) {
+                    return parseInt(value);
+                },
+                from: function(value) {
+                    return parseInt(value);
+                }
+            }
+        });
+
+        range_slider_1.noUiSlider.on('update', function (values, handle) {
+
+            var value = values[handle];
+
+            if (handle) {
+                range_slider_1_max.value = value;
+            } else {
+                range_slider_1_min.value = value;
+            }
+        });
+
+        range_slider_1_max.addEventListener('change', function () {
+            range_slider_1.noUiSlider.set([null, this.value]);
+        });
+
+        range_slider_1_min.addEventListener('change', function () {
+            range_slider_1.noUiSlider.set([this.value, null]);
+        });
+    }
+
+
+    //range_slider_2
+    if ($("#range_slider_2").length) {
+        //change names of 3 vars + id + values start + values + range + steps
+        var range_slider_2 = document.getElementById('range_slider_2');
+        var range_slider_2_max = document.getElementById('range_slider_2_max');
+        var range_slider_2_min = document.getElementById('range_slider_2_min');
+
+        noUiSlider.create(range_slider_2, {
+            start: [1, 10000],
+            connect: true,
+            step: 1,
+            range: {
+                'min': 1,
+                'max': 10000
+            },
+            format: {
+                to: function(value) {
+                    return parseInt(value);
+                },
+                from: function(value) {
+                    return parseInt(value);
+                }
+            }
+        });
+
+        range_slider_2.noUiSlider.on('update', function (values, handle) {
+
+            var value = values[handle];
+
+            if (handle) {
+                range_slider_2_max.value = value;
+            } else {
+                range_slider_2_min.value = value;
+            }
+        });
+
+        range_slider_2_max.addEventListener('change', function () {
+            range_slider_2.noUiSlider.set([null, this.value]);
+        });
+
+        range_slider_2_min.addEventListener('change', function () {
+            range_slider_2.noUiSlider.set([this.value, null]);
+        });
+    }
+
+
+    //range_slider_3
+    if ($("#range_slider_3").length) {
+        //change names of 3 vars + id + values start + values + range + steps
+        var range_slider_3 = document.getElementById('range_slider_3');
+        var range_slider_3_max = document.getElementById('range_slider_3_max');
+        var range_slider_3_min = document.getElementById('range_slider_3_min');
+
+        noUiSlider.create(range_slider_3, {
+            start: [1, 2500],
+            connect: true,
+            step: 1,
+            range: {
+                'min': 1,
+                'max': 2500
+            },
+            format: {
+                to: function(value) {
+                    return parseInt(value);
+                },
+                from: function(value) {
+                    return parseInt(value);
+                }
+            }
+        });
+
+        range_slider_3.noUiSlider.on('update', function (values, handle) {
+
+            var value = values[handle];
+
+            if (handle) {
+                range_slider_3_max.value = value;
+            } else {
+                range_slider_3_min.value = value;
+            }
+        });
+
+        range_slider_3_max.addEventListener('change', function () {
+            range_slider_3.noUiSlider.set([null, this.value]);
+        });
+
+        range_slider_3_min.addEventListener('change', function () {
+            range_slider_3.noUiSlider.set([this.value, null]);
+        });
+    }
+
+
+    //range_slider_4
+    if ($("#range_slider_4").length) {
+        //change names of 3 vars + id + values start + values + range + steps
+        var range_slider_4 = document.getElementById('range_slider_4');
+        var range_slider_4_max = document.getElementById('range_slider_4_max');
+        var range_slider_4_min = document.getElementById('range_slider_4_min');
+
+        noUiSlider.create(range_slider_4, {
+            start: [1, 30],
+            connect: true,
+            step: 1,
+            range: {
+                'min': 1,
+                'max': 30
+            },
+            format: {
+                to: function(value) {
+                    return parseInt(value);
+                },
+                from: function(value) {
+                    return parseInt(value);
+                }
+            }
+        });
+
+        range_slider_4.noUiSlider.on('update', function (values, handle) {
+
+            var value = values[handle];
+
+            if (handle) {
+                range_slider_4_max.value = value;
+            } else {
+                range_slider_4_min.value = value;
+            }
+        });
+
+        range_slider_4_max.addEventListener('change', function () {
+            range_slider_4.noUiSlider.set([null, this.value]);
+        });
+
+        range_slider_4_min.addEventListener('change', function () {
+            range_slider_4.noUiSlider.set([this.value, null]);
+        });
+    }
+</script>
+
+
+</body>
+
+</html>
