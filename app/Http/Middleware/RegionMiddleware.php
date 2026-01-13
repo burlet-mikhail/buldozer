@@ -22,10 +22,9 @@ class RegionMiddleware {
 
         $subdomain = $this->getSubdomain($request);
 
-        // Главный домен — используем регион из сессии/cookie или default
-        if (in_array($subdomain, config('regions.main_subdomains', ['buldozer', 'www']))) {
+        // Основной домен (без поддомена) или www — используем регион из сессии/cookie
+        if ($subdomain === null || $subdomain === 'www') {
             $this->ensureRegionSet();
-
             return $next($request);
         }
 
@@ -45,12 +44,39 @@ class RegionMiddleware {
     }
 
     /**
-     * Извлечь поддомен из хоста.
+     * Извлечь поддомен из хоста относительно базового домена.
+     *
+     * bldzr.ru → null (основной домен)
+     * www.bldzr.ru → www
+     * moscow.bldzr.ru → moscow
      */
-    private function getSubdomain(Request $request): string {
-        $parts = explode('.', $request->getHost());
+    private function getSubdomain(Request $request): ?string {
+        $host = $request->getHost();
+        $baseDomain = $this->getBaseDomain();
 
+        // Если хост совпадает с базовым доменом — это основной сайт
+        if ($host === $baseDomain) {
+            return null;
+        }
+
+        // Извлекаем поддомен: moscow.bldzr.ru → moscow
+        if (str_ends_with($host, '.' . $baseDomain)) {
+            return substr($host, 0, -strlen('.' . $baseDomain));
+        }
+
+        // Fallback для dev окружения с другими доменами
+        $parts = explode('.', $host);
         return $parts[0];
+    }
+
+    /**
+     * Получить базовый домен из APP_URL.
+     */
+    private function getBaseDomain(): string {
+        $appUrl = config('app.url');
+        $parsed = parse_url($appUrl);
+
+        return $parsed['host'] ?? 'localhost';
     }
 
     /**
